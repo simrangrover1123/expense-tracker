@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f2f4f8;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+body.dark {
+  background: #1c1c1c;
+  color: #eee;
+}
+
+.app {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 500px;
+}
+
+body.dark .app {
+  background: #2c2c2c;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+#themeToggle {
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #4caf81;
+  color: #fff;
+}
+
+#themeToggle:hover {
+  background: #43a047;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.form input,
+.form select,
+.form button {
+  padding: 8px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form button {
+  grid-column: span 2;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.form button:hover {
+  background: #9a43a0;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  background: #f7f7f7;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body.dark ul li {
+  background: #444;
+}
+
+ul li button {
+  background: #ff6b6b;
+  border: none;
+  padding: 4px 6px;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+ul li button:hover {
+  background: #e74c3c;
+}
+
+.buttons {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.buttons button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  background: #d32f2f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background: #b71c1c;
+}
