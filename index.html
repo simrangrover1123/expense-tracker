@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>💸 Expense Tracker</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>💸 Expense Tracker</h1>
+      <button id="themeToggle">🌙 Dark Mode</button>
+    </header>
+
+    <!-- Form Section -->
+    <div class="form">
+      <input type="text" id="title" placeholder="Expense title"/>
+      <input type="number" id="amount" placeholder="Amount"/>
+      <select id="category">
+        <option value="Food">🍔 Food</option>
+        <option value="Travel">✈️ Travel</option>
+        <option value="Shopping">🛍 Shopping</option>
+        <option value="Bills">💡 Bills</option>
+        <option value="Other">📌 Other</option>
+      </select>
+      <input type="date" id="date"/>
+      <button id="addBtn">➕ Add Expense</button>
+    </div>
+
+    <!-- Expense List -->
+    <h2>Your Expenses</h2>
+    <ul id="expenseList"></ul>
+
+    <!-- Chart -->
+    <h2>📊 Spending by Category</h2>
+    <canvas id="expenseChart"></canvas>
+
+    <div class="buttons">
+      <button id="clearAll">🗑 Clear All</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
